@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
 import About from './pages/About';
 import Weather from './pages/Weather';
-import Signup from './pages/Signup';
+import SignIn from './pages/Signin';
+import SignUp from './pages/Signup';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Route path="/predictions" element={<Predictions />} />
         <Route path='/About' element={<About/>}/>
         <Route path='/weather' element={<Weather/>}/>
-        <Route path='/signup' element={<Signup/>}/>
+        <Route path='/signin' element={<SignIn/>}/>
+        <Route path='/signup' element={<SignUp/>}/>
       </Routes>
     </Router>
   );

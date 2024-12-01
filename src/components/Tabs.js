@@ -38,7 +38,7 @@ function a11yProps(index) {
   };
 }
 
-export default function BasicTabs({children}) {
+export default function BasicTabs({maxTempPredictionComponent, cloudPredictionComponent, electricityDemandPredictionComponent}) {
     //Styling for the div
     const styles={
         tabs:{
@@ -67,15 +67,18 @@ export default function BasicTabs({children}) {
       <Box>
         <CustomTabPanel value={value} index={0}>
             <Container sx={{ mt: 2, mb: 2, flex: 1}}>
-                {children}
+                {maxTempPredictionComponent}
             </Container>
-            
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
-            Item Two
+            <Container sx={{ mt: 2, mb: 2, flex: 1}}>
+                {cloudPredictionComponent}
+            </Container>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2}>
-            Item Three
+          <Container sx={{ mt: 2, mb: 2, flex: 1}}>
+              {electricityDemandPredictionComponent}
+          </Container>
         </CustomTabPanel>
       </Box>
     </div>

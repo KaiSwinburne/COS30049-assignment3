@@ -26,7 +26,7 @@ function About(){
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     display: 'flex',
-                    height: '30vh',
+                    height: 'fit-content',
                     justifyContent: 'center',
                     color: 'white',
                     boxShadow: 5,
@@ -76,9 +76,9 @@ function About(){
 
             <Container component="main" sx={{ mt: 4, mb: 2, flex: 1 }}>
                 <Grid container spacing={4} sx={{ mt: 4 }}>
-                    {[{feature: "Thanh Tai Tran", desc: "I am interested in playing video games, working out and generally fascinated by technology studies.",email:"104090322@student.swin.edu.au"}, 
-                      {feature: "Christian van der Merwe", desc: "Produces data visualisations from historical data that shows relationships between meteorological elements.",email:"104891800@student.swin.edu.au"}, 
-                      {feature: "Mohammad Khalid", desc: "Produces data visualisations from historical data that shows relationships between meteorological elements.",email:"103838204@student.swin.edu.au"}
+                    {[{feature: "Thanh Tai Tran", desc: "In charge of front-end & back-end development, as well as QA testings",email:"104090322@student.swin.edu.au"}, 
+                      {feature: "Christian van der Merwe", desc: "Developer of back-end using FastAPI for the Weather page",email:"104891800@student.swin.edu.au"}, 
+                      {feature: "Mohammad Khalid", desc: "Oversaw the documentation of the project, front-end & back-end bridging using Axios",email:"103838204@student.swin.edu.au"}
                     ].map((card) => (
                     //To set the columns number in a grid, it will take 12/ [divisive] = [num of columns final]
                     <Grid item key={card} xs={12} sm={6} md={4}> 

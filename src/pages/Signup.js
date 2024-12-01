@@ -1,10 +1,12 @@
 import React from 'react';
-import LoginSignup from '../components/LoginSignup';
+import Header from '../components/Header';
+import SignUp from '../components/SignUp';
 
 function Signup() {
   return (
     <div>
-      <LoginSignup />
+      <Header/>
+      <SignUp/>
     </div>
   );
 }

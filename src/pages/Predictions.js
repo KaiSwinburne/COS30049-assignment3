@@ -11,13 +11,18 @@ import Clouds from '../assets/Clouds.jpg'
 import Electricity from '../assets/Electricity.jpg'
 import BasicTabs from '../components/Tabs';
 import MaxTempPrediction from '../components/MaxTempPrediction';
+import CloudPrediction from '../components/CloudPrediction';
+import ElectricityDemandPrediction from '../components/eletricityDemandPrediction';
 
 function Predictions(){
     return(
         <div>
             <Header/>
-            <BasicTabs>
-                <MaxTempPrediction/>
+            <BasicTabs 
+                maxTempPredictionComponent = {<MaxTempPrediction/>}
+                cloudPredictionComponent = {<CloudPrediction/>}
+                electricityDemandPredictionComponent = {<ElectricityDemandPrediction/>}
+                > 
             </BasicTabs>
         </div>
         
