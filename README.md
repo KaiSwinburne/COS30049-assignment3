@@ -484,6 +484,6 @@ if __name__ == "__main__":
 
 ## Credits
 Developed and maintained by:
-Thanh Tai Tran
-Christian van der Merwe
-Mohammad Khalid
+1. Thanh Tai Tran
+2. Christian van der Merwe
+3. Mohammad Khalid
